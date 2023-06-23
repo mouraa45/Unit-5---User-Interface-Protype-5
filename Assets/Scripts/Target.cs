@@ -30,7 +30,6 @@ public class Target : MonoBehaviour
 		{
 			Destroy(gameObject);
 			Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
-			gameManager.UpdateScore(scoreValue);
 			gameManager.UpdateScore(pointValue);
 		}
 		
